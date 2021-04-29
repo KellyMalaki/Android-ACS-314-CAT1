@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="This app was developed from ACS 314 Class in Daystar January Semester 2021. It was developed by a student by the name of Kelly Malaki guided by his lecturer Mr. Anthony Wambua. It is an app to simulate an android app that would have been used in booking of SGR trains online from an android phone."
+        android:textColor="@color/black"/>
+</FrameLayout>

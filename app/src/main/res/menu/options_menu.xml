@@ -11,7 +11,17 @@
         android:orderInCategory="2"/>
 
     <item
+        android:title="Log Out"
+        android:id="@+id/menu_logout"
+        android:orderInCategory="3"/>
+
+    <item
+        android:title="Delete Account"
+        android:id="@+id/menu_delacc"
+        android:orderInCategory="4"/>
+
+    <item
         android:title="Quit"
         android:id="@+id/menu_Quit"
-        android:orderInCategory="3"/>
+        android:orderInCategory="4"/>
 </menu>

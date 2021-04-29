@@ -7,10 +7,9 @@
     tools:context=".LoginActivity"
     android:orientation="vertical">
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/train"/>
+        android:layout_height="match_parent">
 
     <ScrollView
         android:paddingTop="50dp"
@@ -20,6 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/train"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +42,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:id="@+id/txtloginphonenumber"/>
+                android:id="@+id/txtloginphonenumber"
+
+                android:inputType="phone"/>
 
             <TextView
                 android:paddingTop="10dp"
@@ -47,12 +53,20 @@
                 android:textSize="20sp"
                 android:text="Password"/>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:inputType="textPassword"
-                android:id="@+id/txtloginpassword"/>
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:background="@color/white"
+                    android:id="@+id/txtloginpassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:layout_marginTop="60dp"
@@ -72,11 +86,12 @@
                 android:id="@+id/btn_login_sign_up"
                 />
 
+
+
         </LinearLayout>
         </LinearLayout>
 
     </ScrollView>
-
-
+    </RelativeLayout>
 
 </LinearLayout>

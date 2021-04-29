@@ -20,16 +20,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:text="Kelly Malaki"
+        android:text="Users name"
+        android:id="@+id/headername"
         android:textSize="15sp"
         android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            android:text="phone"
+            android:id="@+id/headerphone"
+            android:textColor="@color/white"></TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:textSize="12sp"
-        android:text="kellymalaki181155@daystar.ac.ke"
+        android:text="email"
+        android:id="@+id/headeremail"
         android:textColor="@color/white"></TextView>
 
     </LinearLayout>

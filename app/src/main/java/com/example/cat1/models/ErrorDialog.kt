@@ -44,6 +44,15 @@ class ErrorDialog {
                             }else{
                                 if (thetask == "nologin"){
                                     themessage.text = "Incorrect Username or password Inserted. Check and try again"
+                                }else{
+                                    if (thetask == "phoneused"){
+                                        themessage.text = "The phone number above has an existing account already"
+                                    }else{
+                                        if (thetask == "nochanges"){
+                                            themessage.text = "No changes have been made for an update"
+                                        }
+                                    }
+
                                 }
                             }
                         }

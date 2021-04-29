@@ -6,21 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/train"/>
-
     <ScrollView
         android:paddingTop="50dp"
         android:paddingBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/train"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,12 +74,20 @@
                     android:textSize="20sp"
                     android:text="Password" />
 
-                <EditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:id="@+id/txtpassword"
-                    android:inputType="textVisiblePassword"/>
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/txtpassword"
+                        android:inputType="textVisiblePassword"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     android:layout_marginTop="60dp"
@@ -100,18 +108,8 @@
                     />
         </LinearLayout>
 
-            <Button
-                android:layout_marginTop="60dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/white"
-                />
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </LinearLayout>
